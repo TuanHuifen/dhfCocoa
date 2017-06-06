@@ -9,5 +9,8 @@
 #import "Duanhuifen.h"
 
 @implementation Duanhuifen
-
++ (NSString *)printLog{
+    NSLog(@"使用了段慧芬方法 ");
+    return @"使用了段慧芬方法 ";
+}
 @end

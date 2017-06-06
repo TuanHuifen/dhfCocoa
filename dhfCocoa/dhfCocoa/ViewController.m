@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "Duanhuifen.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *titleLab;
 
 @end
 
@@ -16,7 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor blueColor];
+    self.titleLab.textColor = [UIColor whiteColor];
+    
+}
+
+- (IBAction)chageBtnAction:(UIButton *)sender {
+     self.titleLab.text = [Duanhuifen printLog];
 }
 
 
